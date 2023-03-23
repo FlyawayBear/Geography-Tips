@@ -1238,25 +1238,6 @@ tips and techniques, one can master it all.
 <script src="https://images.edrawmind.com/assets/js/bottom-banner.js"></script>
 <!-- 懒加载文件-->
 <script src="https://images.edrawmax.com/assets/js/lazyload.js"></script>
-<!--web notification code-->
-<script>
-  var _NOTIFICATION_CONFIG = {
-    worker: 'https://www.edrawmind.com/web-notification/sw.js',
-    wsNotificationJsPath: 'https://dc-static.wondershare.com/notification/wsNotification.js',
-    trackUrl: 'https://prod-web.wondershare.cc/api/v1/prodweb/notification'
-  };
-  (function() {
-    var d = document,
-      g = d.createElement('script'),
-      s = d.getElementsByTagName('script')[0];
-    g.type = 'text/javascript';
-    g.async = true;
-    g.defer = true;
-    g.src = _NOTIFICATION_CONFIG.wsNotificationJsPath;
-    s.parentNode.insertBefore(g, s);
-  })();
-</script>
-<!-- end web notification code-->
 
 <script>
     $('body').on('wsc.event.page.ready', function() {
